@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Romain Rolland. All rights reserved.
 //
 
+@import CoreData;
+
 #import "ViewController.h"
+#import "KVCMapping/KVCMapping/KVCMapping.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
