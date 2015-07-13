@@ -1,0 +1,30 @@
+[
+    {
+      "titleArticle": "article 1",
+      "descArticle": "description 1",
+      "likeCounts": 8,
+      "creationDate": "2015-06-21T00:00:00+0200",
+      "isOnline": 0
+    },
+    {
+      "titleArticle": "article 2",
+      "descArticle": "description 2",
+      "likeCounts": 7,
+      "creationDate": "2015-06-22T00:00:00+0200",
+      "isOnline": 1
+    },
+    {
+      "titleArticle": "article 3",
+      "descArticle": "description 3",
+      "likeCounts": 6,
+      "creationDate": "2015-06-23T00:00:00+0200",
+      "isOnline": 0
+    },
+    {
+      "titleArticle": "article 4",
+      "descArticle": "description 4",
+      "likeCounts": 5,
+      "creationDate": "2015-06-24T00:00:00+0200",
+      "isOnline": 1
+    }
+  ]

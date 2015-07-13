@@ -17,6 +17,8 @@
 		65F619951B4FC27400421ADF /* KVCMappingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F619941B4FC27400421ADF /* KVCMappingTestTests.m */; };
 		65F619A21B4FC67900421ADF /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F619A11B4FC67900421ADF /* Article.m */; };
 		65F61A251B4FCC1D00421ADF /* libKVCMapping-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F61A201B4FCBCC00421ADF /* libKVCMapping-ios.a */; };
+		65F61A291B4FEEBF00421ADF /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 65F61A281B4FEEBF00421ADF /* articles.json */; };
+		65F61A2F1B4FF7C100421ADF /* NSManagedObjectContext+Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F61A2E1B4FF7C100421ADF /* NSManagedObjectContext+Article.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		65F619A01B4FC67900421ADF /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		65F619A11B4FC67900421ADF /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		65F61A0E1B4FCBC900421ADF /* KVCMapping.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KVCMapping.xcodeproj; path = KVCMappingTest/KVCMapping/KVCMapping.xcodeproj; sourceTree = "<group>"; };
+		65F61A281B4FEEBF00421ADF /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		65F61A2D1B4FF7C100421ADF /* NSManagedObjectContext+Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Article.h"; sourceTree = "<group>"; };
+		65F61A2E1B4FF7C100421ADF /* NSManagedObjectContext+Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Article.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,8 @@
 				65F6199F1B4FC66600421ADF /* Model */,
 				65F619791B4FC27400421ADF /* AppDelegate.h */,
 				65F6197A1B4FC27400421ADF /* AppDelegate.m */,
+				65F61A2D1B4FF7C100421ADF /* NSManagedObjectContext+Article.h */,
+				65F61A2E1B4FF7C100421ADF /* NSManagedObjectContext+Article.m */,
 				65F6197F1B4FC27400421ADF /* ViewController.h */,
 				65F619801B4FC27400421ADF /* ViewController.m */,
 				65F619821B4FC27400421ADF /* Main.storyboard */,
@@ -128,6 +135,7 @@
 		65F619751B4FC27400421ADF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65F61A281B4FEEBF00421ADF /* articles.json */,
 				65F619761B4FC27400421ADF /* Info.plist */,
 				65F619771B4FC27400421ADF /* main.m */,
 			);
@@ -280,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F61A291B4FEEBF00421ADF /* articles.json in Resources */,
 				65F619841B4FC27400421ADF /* Main.storyboard in Resources */,
 				65F619891B4FC27400421ADF /* LaunchScreen.xib in Resources */,
 				65F619861B4FC27400421ADF /* Images.xcassets in Resources */,
@@ -304,6 +313,7 @@
 				65F6197B1B4FC27400421ADF /* AppDelegate.m in Sources */,
 				65F619781B4FC27400421ADF /* main.m in Sources */,
 				65F619811B4FC27400421ADF /* ViewController.m in Sources */,
+				65F61A2F1B4FF7C100421ADF /* NSManagedObjectContext+Article.m in Sources */,
 				65F6197E1B4FC27400421ADF /* KVCMappingTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KVCMappingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -444,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KVCMappingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
